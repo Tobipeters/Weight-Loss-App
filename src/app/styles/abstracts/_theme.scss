@@ -1,0 +1,27 @@
+// @import "./node_modules/@angular/material/theming";
+// @import "./color";
+
+// @include mat-core();
+
+// $wla-primary: mat-palette($mat-wla-primary-map, 500);
+// $wla-secondary: mat-palette($mat-wla-secondary-map, 500);
+// $wla-theme: mat-light-theme($wla-primary, $wla-secondary);
+
+// @include angular-material-theme($wla-theme);
+
+@use 'colors' as *;
+
+:root {
+  @each $name, $shades in $colors {
+    @each $shade, $value in $shades {
+      // #{$name}: nth($color, 1);
+
+      @if #{$shade} == 'normal' {
+        #{$name}: $value;
+      } @else {
+        #{$name}-#{$shade}: $value;
+      }
+    }
+  }
+}
+

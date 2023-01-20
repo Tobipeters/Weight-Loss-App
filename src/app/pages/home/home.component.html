@@ -1,0 +1,52 @@
+<div class="home-container">
+  <app-header [title]="title">
+    <img
+      src="/assets/images/avatars/my_avatar.jpeg"
+      alt="user-avatar"
+      class="img-fluid avatar"
+    />
+  </app-header>
+
+  <section class="overview-section">
+    <div class="metric-container">
+      <div class="col-6 p-0" *ngFor="let metric of metrics">
+        <app-metric-card [metricDetails]="metric"></app-metric-card>
+      </div>
+    </div>
+  </section>
+
+  <section class="goal-section">
+    <div class="title-container">
+      <h4 class="title mb-0">Goal for week</h4>
+      <p class="side-text mb-0">42 of54</p>
+    </div>
+
+    <div class="chart-section">
+      <app-analytic-chart
+        [series]="goatChart.series"
+        [chart]="goatChart.chart"
+        [plotOptions]="goatChart.plotOptions"
+        [xaxis]="goatChart.xaxis"
+        [grid]="goatChart.grid"
+      ></app-analytic-chart>
+    </div>
+  </section>
+
+  <section class="goal-section">
+    <div class="title-container">
+      <h4 class="title mb-0">Trending Workouts</h4>
+      <a href="3" class="side-text mb-0">sell all</a>
+    </div>
+
+    <div class="trending-card wla-box-shadow">
+      <div class="tend-title">
+        <mat-icon class="material-symbols-outlined">directions_bike</mat-icon>
+        <h4 class="mb-0 title">Muscle Builder</h4>
+      </div>
+
+      <div class="play-holder">
+        <mat-icon class="material-symbols-outlined play"> play_arrow </mat-icon>
+      </div>
+    </div>
+  </section>
+</div>

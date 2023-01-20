@@ -1,0 +1,54 @@
+@use "../../styles/abstracts/colors" as *;
+
+.mobile-bar {
+  background-color: var(--wla-white);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 2.5rem 1.5rem;
+  z-index: 5;
+
+  .add {
+    z-index: 6;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin: -30px 0 0 -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--wla-primary-color);
+    cursor: pointer;
+
+    .mat-icon {
+      color: var(--wla-white);
+      width: 2rem;
+      height: 2rem;
+      font-size: 2rem;
+    }
+  }
+
+  .bar-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .mat-icon {
+    color: #6e6e6e;
+    cursor: pointer;
+  }
+
+  .active-nav {
+    .material-icons-outlined {
+      font-family: "Material Icons";
+    }
+    .mat-icon {
+      color: var(--wla-primary-color-400);
+    }
+  }
+}

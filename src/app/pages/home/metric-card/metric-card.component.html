@@ -1,0 +1,21 @@
+<div class="card metric-card wla-box-shadow">
+  <div class="icon-holder">
+    <mat-icon class="material-icons-outlined">
+      {{ metricDetails.iconTitle }}
+    </mat-icon>
+  </div>
+  <div class="text-progress-holder">
+    <div class="count">
+      <div class="figure">{{ metricDetails.countFigure | number }}</div>
+      <div class="unit" *ngIf="metricDetails.countUnit">
+        {{ metricDetails.countUnit }}
+      </div>
+    </div>
+    <h4 class="title">{{ metricDetails.title }}</h4>
+
+    <mat-progress-bar
+      mode="determinate"
+      [value]="metricDetails.progressValue"
+    ></mat-progress-bar>
+  </div>
+</div>

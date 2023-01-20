@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+
+// @use "@angular/material" as mat;
+@use "../src/app/styles/abstracts/colors" as *;
+@use "../src/app/styles/abstracts/theme" as *;
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #fafafa;
+}
+
+.wla-box-shadow {
+  box-shadow: 0px 7.7551px 23.2653px rgba(147, 147, 147, 0.15);
+}
+
+.menu-popup {
+  width: 100%;
+  border-radius: 12px;
+}

@@ -1,0 +1,25 @@
+// @use "@angular/material" as mat;
+
+// @use "../abstracts/colors" as *;
+
+// @include mat.core();
+
+// $mat-wla-primary: mat.define-palette($mat-wla-primary-map, 500);
+// $mat-wla-secondary: mat.define-palette($mat-wla-secondarry-map, 500);
+
+// $mat-wla-typography: mat.define-typography-config(
+//   $font-family: "Roboto, sans-serif",
+// );
+
+// $mat-wla-theme: mat.define-light-theme(
+//   (
+//     color: (
+//       primary: $mat-wla-primary,
+//       secondary: $mat-wla-secondary,
+//     ),
+//     typography: $mat-wla-typography,
+//   )
+// );
+
+
+// @include mat.all-component-themes($mat-wla-theme);

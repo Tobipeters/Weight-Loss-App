@@ -1,0 +1,88 @@
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+
+  .title {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+
+  .side-text {
+    color: #a4abb2;
+  }
+}
+
+.overview-section {
+  padding: 1rem 1.5rem;
+
+  .metric-container {
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+    gap: 2rem;
+    padding: 0 0 2rem;
+
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+.goal-section {
+  padding: 1rem 1.5rem 2rem;
+}
+
+.chart-section {
+  background-color: var(--wla-primary-color);
+  border-radius: 12px;
+}
+
+.trending-card {
+  padding: 1.2rem;
+  background-color: var(--wla-white);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+
+  .tend-title {
+    display: flex;
+    gap: 1rem;
+
+    .mat-icon {
+      color: var(--wla-primary-color);
+    }
+
+    .title {
+      font-weight: 400;
+    }
+  }
+
+  .play-holder {
+    margin-left: auto;
+    width: 4rem;
+    height: 4rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--wla-secondary-color);
+    border-radius: 50%;
+
+    .play {
+      width: 3rem;
+      height: 3rem;
+      font-size: 3rem;
+      color: var(--wla-secondary-color);
+    }
+  }
+}

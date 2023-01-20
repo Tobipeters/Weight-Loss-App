@@ -1,0 +1,120 @@
+/******* Custom Palette *******/
+/* For use in src/lib/core/theming/_palette.scss */
+$mat-wla-primary-map: (
+    50 : #efedff,
+    100 : #d7d1ff,
+    200 : #bdb3ff,
+    300 : #a394ff,
+    400 : #8f7dff,
+    500 : #7b66ff,
+    600 : #735eff,
+    700 : #6853ff,
+    800 : #5e49ff,
+    900 : #4b38ff,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #e4e1ff,
+    A700 : #cdc8ff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+
+/* For use in src/lib/core/theming/_palette.scss */
+$mat-wla-secondary-map: (
+    50 : #f8ffea,
+    100 : #edffca,
+    200 : #e1ffa6,
+    300 : #d5ff82,
+    400 : #ccff68,
+    500 : #c3ff4d,
+    600 : #bdff46,
+    700 : #b5ff3d,
+    800 : #aeff34,
+    900 : #a1ff25,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #ebffd3,
+    A700 : #dfffb9,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+/******************************/
+
+$wla-primary: #7b66ff;
+$wla-primary-50: #efedff;
+$wla-primary-100: #d7d1ff;
+$wla-primary-400: #8f7dff;
+$wla-primary-700: #6853ff;
+$wla-primary-800: #5e49ff;
+$wla-primary-900: #4b38ff;
+
+$wla-secondary: #c3ff4d;
+$wla-secondary-50: #f8ffea;
+$wla-secondary-100: #edffca;
+$wla-secondary-400: #ccff68;
+$wla-secondary-700: #b5ff3d;
+$wla-secondary-800: #aeff34;
+$wla-secondary-900: #a1ff25;
+
+$wla-black: #000000;
+$wla-white: #ffffff;
+
+$colors: (
+  --wla-primary-color: (
+    normal: $wla-primary,
+    50: $wla-primary-50,
+    100: $wla-primary-100,
+    400: $wla-primary-400,
+    700: $wla-primary-700,
+    800: $wla-primary-800,
+    900: $wla-primary-900,
+  ),
+
+  --wla-secondary-color: (
+    normal: $wla-secondary,
+    50: $wla-secondary-50,
+    100: $wla-secondary-100,
+    400: $wla-secondary-400,
+    700: $wla-secondary-700,
+    800: $wla-secondary-800,
+    900: $wla-secondary-900,
+  ),
+
+  --wla-black: (
+    normal: $wla-black,
+  ),
+
+  --wla-white: (
+    normal: $wla-white,
+  ),
+);

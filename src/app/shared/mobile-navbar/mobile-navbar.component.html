@@ -1,0 +1,15 @@
+<nav class="mobile-bar container">
+  <div matRRipple class="add shadow-sm" (click)="openMenu()">
+    <mat-icon class="material-icons-outlined">add</mat-icon>
+  </div>
+
+  <div class="bar-icon">
+    <div
+      [ngClass]="item.route === currentRoute ? 'active-nav' : ''"
+      [routerLink]="item.route"
+      *ngFor="let item of navItems"
+    >
+      <mat-icon class="material-icons-outlined">{{ item.iconName }}</mat-icon>
+    </div>
+  </div>
+</nav>
