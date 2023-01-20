@@ -1,4 +1,6 @@
 .menu-list {
+  position: relative;
+
   .list-group-item {
     display: flex;
     align-items: center;
@@ -6,9 +8,32 @@
     padding: 1rem 1.5rem;
     border: none;
     margin-bottom: 1rem;
+    border-radius: 12px;
+    transition: 0.7s all ease-in-out;
 
     .mat-icon {
       color: var(--wla-primary-color);
     }
+
+    .material-icons-outlined {
+      font-family: "Material Icons Outlined";
+    }
+
+    &:hover {
+      background-color: var(--wla-primary-color);
+      color: var(--wla-white);
+
+      .mat-icon {
+        color: var(--wla-white);
+      }
+    }
   }
+}
+
+.menu-group-pointer {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background-color: black;
+  width: 50px;
+  height: 30px;
+  transform: rotate(180deg);
 }

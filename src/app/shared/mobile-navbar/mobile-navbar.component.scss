@@ -2,11 +2,11 @@
 
 .mobile-bar {
   background-color: var(--wla-white);
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 0;
   left: 0;
-  padding: 2.5rem 1.5rem;
+  padding: 2rem 1.5rem;
   z-index: 5;
 
   .add {
