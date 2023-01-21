@@ -1,0 +1,40 @@
+.box-section {
+  padding: 1.5rem;
+
+  .btn {
+    display: flex;
+    width: 90%;
+    margin: 3rem auto;
+  }
+}
+
+.box-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 2rem;
+
+  .box-data {
+    border-radius: 12px;
+    padding: 1.2rem;
+    background-color: var(--wla-white);
+    transition: .5s all ease-in;
+    border: none;
+
+    .gender {
+      text-align: center;
+      margin: 1rem 0;
+    }
+
+    .digit {
+      text-align: center;
+      margin: 1.5rem 0 0;
+      font-size: 2rem;
+    }
+  }
+
+  .box-data:hover {
+    box-shadow: none;
+    border: 1px solid var(--wla-secondary-color);
+  }
+}
