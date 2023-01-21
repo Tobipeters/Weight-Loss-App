@@ -53,7 +53,7 @@ body {
 
 .cdk-overlay-pane {
   //   transform: translateY(-400%);
-  animation: growOeepn 1s forwards 0s ease-in;
+  animation: growOeepn .8s  ease-in;
 }
 // .cdk-overlay-container > * {
 //   transition: none;
@@ -61,7 +61,7 @@ body {
 
 .menu-popup {
   width: 100%;
-  max-width: 92vw !important;
+  max-width: 90vw !important;
   position: relative;
 
   .mat-dialog-container {
