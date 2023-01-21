@@ -19,44 +19,51 @@ export class HistoryComponent implements OnInit {
     ],
     chart: {
       height: 130,
-      type: 'area',
+      type: 'line',
       foreColor: '#a4abb2;',
       fontFamily: 'Roboto',
       toolbar: {
         show: false,
       },
     },
-    plotOptions: {
-      area: {
-        fillTo: 'origin',
-      },
-    },
+    plotOptions: {},
     grid: {
       show: false,
     },
     xaxis: {
-      // labels: {
-      //   rotate: -45,
-      // },
       categories: ['t', 'w', 't', 'f', 's', 's', 'm'],
       tickPlacement: 'on',
     },
     yaxis: {
       show: false,
     },
-
+    dataLabels: {
+      enabled: true,
+      style: {
+        colors: ['#7b66ff'],
+        fontSize: '8px',
+      },
+      background: {
+        enabled: true,
+        foreColor: '#7b66ff',
+        borderRadius: 100,
+      },
+    },
     stroke: {
       show: true,
       curve: 'straight',
-      width: 2,
+      width: 3,
       lineCap: 'butt',
-      colors: ['#c3ff4d', '#ffffff'],
-      fill: {
-        colors: ['#fff'],
-      },
+      colors: ['#ccff68'],
+      // fill: {
+      //   colors: ['#fff'],
+      // },
     },
+
+    // colors: ['#c3ff4d', '#7b66ff'],
   };
 
+  //////////////////////////////////////////////////
   sleepChart: any = {
     series: [
       // data:
@@ -81,6 +88,9 @@ export class HistoryComponent implements OnInit {
         borderRadiusApplication: 'end',
         columnWidth: '35px',
       },
+    },
+    dataLabels: {
+      enabled: false,
     },
     grid: {
       show: false,
