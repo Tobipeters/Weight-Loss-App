@@ -6,14 +6,14 @@
   <section class="history-analytic-section">
     <div class="title-container">
       <h4 class="title mb-0">
-        {{ today | date }}
+        {{ today | date : "EEEE, d MMMM" }}
       </h4>
     </div>
 
     <div class="data-analytic-card wla-box-shadow chart-card">
       <div class="d-flex flex-column justify-content-between h-100">
         <div class="card-title-container">
-          <h4 class="title">Weight</h4>
+          <h4 class="title mt-2">Weight</h4>
         </div>
 
         <div class="section-value">
@@ -31,6 +31,7 @@
           [grid]="weightChart.grid"
           [colors]="weightChart.colors"
           [stroke]="weightChart.stroke"
+          [dataLabels]="weightChart.dataLabels"
         ></app-analytic-chart>
       </div>
     </div>
@@ -113,6 +114,7 @@
           [yaxis]="sleepChart.yaxis"
           [grid]="sleepChart.grid"
           [colors]="sleepChart.colors"
+          [dataLabels]="sleepChart.dataLabels"
         ></app-analytic-chart>
       </div>
     </div>

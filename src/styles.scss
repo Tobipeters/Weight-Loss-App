@@ -15,6 +15,7 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   background-color: #fafafa;
+  scroll-behavior: smooth;
 }
 
 .material-icons-outlined {
@@ -44,7 +45,7 @@ body {
 
 @keyframes growOeepn {
   from {
-    transform: scale(0);
+    transform: scale(0.4);
   }
   to {
     transform: scale(1);
@@ -53,13 +54,14 @@ body {
 
 .cdk-overlay-pane {
   //   transform: translateY(-400%);
-  animation: growOeepn .8s  ease-in;
 }
-// .cdk-overlay-container > * {
-//   transition: none;
-// }
+
+.cdk-overlay-container > * {
+  transition: none;
+}
 
 .menu-popup {
+  animation: growOeepn 0.8s ease-in;
   width: 100%;
   max-width: 90vw !important;
   position: relative;

@@ -40,6 +40,7 @@ export class AnalyticChartComponent implements OnInit, OnDestroy {
   @Input() yaxis!: any;
   @Input() colors!: any[];
   @Input() stroke!: ApexStroke;
+  @Input() dataLabels!: ApexDataLabels;
 
   chartOptions!: Partial<IChartOptions> | any;
   showChart: boolean = false;
@@ -51,9 +52,7 @@ export class AnalyticChartComponent implements OnInit, OnDestroy {
       series: this.series,
       chart: this.chart,
       plotOptions: this.plotOptions,
-      dataLabels: {
-        enabled: false,
-      },
+      dataLabels: this.dataLabels,
       grid: this.grid,
       xaxis: this.xaxis,
       yaxis: this.yaxis,
@@ -61,7 +60,8 @@ export class AnalyticChartComponent implements OnInit, OnDestroy {
       legend: {
         show: false,
       },
-      stroke: this.stroke
+      stroke: this.stroke,
+  
     };
 
     this.showChart = true;

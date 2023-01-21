@@ -32,7 +32,7 @@
     overflow-x: auto;
     width: 100%;
     gap: 2rem;
-    padding: 0 0 2rem;
+    padding: 0 0 1rem;
 
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
@@ -61,6 +61,7 @@
 
   .tend-title {
     display: flex;
+    align-items: center;
     gap: 1rem;
 
     .mat-icon {
@@ -68,14 +69,15 @@
     }
 
     .title {
+      font-size: 0.9rem;
       font-weight: 400;
     }
   }
 
   .play-holder {
     margin-left: auto;
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -83,9 +85,9 @@
     border-radius: 50%;
 
     .play {
-      width: 3rem;
-      height: 3rem;
-      font-size: 3rem;
+      width: 2rem;
+      height: 2rem;
+      font-size: 2rem;
       color: var(--wla-secondary-color);
     }
   }
