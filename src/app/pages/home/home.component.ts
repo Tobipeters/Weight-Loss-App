@@ -49,9 +49,9 @@ export class HomeComponent implements OnInit {
     plotOptions: {
       bar: {
         distributed: true,
-        borderRadius: 12,
+        borderRadius: 10,
         borderRadiusApplication: 'end',
-        columnWidth: '50px',
+        columnWidth: '40px',
       },
     },
     grid: {
@@ -73,6 +73,9 @@ export class HomeComponent implements OnInit {
       '#d7d1ff',
       '#d7d1ff',
     ],
+    dataLabels: {
+      enabled: false,
+    },
   };
 
   constructor() {}

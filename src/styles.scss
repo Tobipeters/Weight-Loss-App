@@ -52,19 +52,20 @@ body {
   }
 }
 
-.cdk-overlay-pane {
-  //   transform: translateY(-400%);
-}
+// .cdk-overlay-pane {
+//     transform: translateY(-400%);
+// }
 
-.cdk-overlay-container > * {
-  transition: none;
-}
+// .cdk-overlay-container > * {
+//   transition: none;
+// }
 
 .menu-popup {
-  animation: growOeepn 0.8s ease-in;
+  //   animation: growOeepn 0.8s ease-in;
   width: 100%;
   max-width: 90vw !important;
   position: relative;
+  transition: 0.8s all ease-in;
 
   .mat-dialog-container {
     border-radius: 24px;
