@@ -10,6 +10,7 @@ import { MobileNavbarComponent } from './mobile-navbar/mobile-navbar.component';
 import { HeaderComponent } from './header/header.component';
 import { AnalyticChartComponent } from './analytic-chart/analytic-chart.component';
 import { MenuPopupComponent } from './menu-popup/menu-popup.component';
+import { AddWeightComponent } from './add-weight/add-weight.component';
 
 const modules = [
   CommonModule,
@@ -28,7 +29,7 @@ const components = [
 ];
 
 @NgModule({
-  declarations: [components],
+  declarations: [components, AddWeightComponent],
   imports: [modules],
   exports: [modules, components],
 })

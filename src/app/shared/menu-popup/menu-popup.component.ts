@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialogRef } from '@angular/material/dialog';
+import {  MatDialog } from '@angular/material/dialog';
+import { AddWeightComponent } from '../add-weight/add-weight.component';
 
 @Component({
   selector: 'app-menu-popup',
@@ -26,13 +27,15 @@ export class MenuPopupComponent implements OnInit {
     },
   ];
 
-  constructor(private dialogRef: MatDialogRef<any>) {}
+  constructor(private dialog: MatDialog) {}
 
   ngOnInit(): void {
-    
+
   }
 
-  changePosition() {
-    this.dialogRef.updatePosition({ top: '50px', left: '50px' });
-  }
+openDialog(){
+  this.dialog.open(AddWeightComponent, {
+    panelClass: 'fullpage-popup'
+  })
+}
 }
