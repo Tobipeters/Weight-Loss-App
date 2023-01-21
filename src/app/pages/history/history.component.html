@@ -1,1 +1,120 @@
-<p>history works!</p>
+<div class="history-container">
+  <app-header [title]="title">
+    <mat-icon class="material-icons-outlined sync-icon"> cached </mat-icon>
+  </app-header>
+
+  <section class="history-analytic-section">
+    <div class="title-container mb-4">
+      <h4 class="title mb-0">
+        {{ today | date }}
+      </h4>
+    </div>
+
+    <div class="data-analytic-card wla-box-shadow chart-card">
+      <div class="d-flex flex-column justify-content-between h-100">
+        <div class="card-title-container">
+          <h4 class="title">Weight</h4>
+        </div>
+
+        <div class="section-value">
+          <h3 class="value">52,3<small>kg</small></h3>
+        </div>
+      </div>
+
+      <div class="chart-section">
+        <app-analytic-chart
+          [series]="weightChart.series"
+          [chart]="weightChart.chart"
+          [plotOptions]="weightChart.plotOptions"
+          [xaxis]="weightChart.xaxis"
+          [yaxis]="weightChart.yaxis"
+          [grid]="weightChart.grid"
+          [colors]="weightChart.colors"
+          [stroke]="weightChart.stroke"
+        ></app-analytic-chart>
+      </div>
+    </div>
+
+    <div class="data-analytic-card wla-box-shadow">
+      <div class="card-title-container w-100">
+        <h4 class="title">BMI</h4>
+
+        <div class="d-flex align-items-center gap-1">
+          <h4 class="title">17.3</h4>
+          <mat-icon class="material-icons-outlined"> arrow_drop_up </mat-icon>
+        </div>
+      </div>
+
+      <div class="row my-3">
+        <!-- Progress bar -->
+        <div class="col-4 pe-0">
+          <mat-progress-bar
+            class="progress-one"
+            mode="determinate"
+            [value]="74"
+          ></mat-progress-bar>
+        </div>
+        <div class="col-4">
+          <mat-progress-bar
+            class="progress-two"
+            mode="determinate"
+            [value]="0"
+          ></mat-progress-bar>
+        </div>
+        <div class="col-4 ps-0">
+          <mat-progress-bar
+            class="progress-three"
+            mode="determinate"
+            [value]="0"
+          ></mat-progress-bar>
+        </div>
+      </div>
+      <!-- Values -->
+
+      <div class="d-flex justify-content-evenly mb-3">
+        <span>18,5</span>
+        <span>25</span>
+      </div>
+
+      <!-- Legend -->
+      <div class="d-flex gap-4 align-items-center">
+        <div class="legend-holder">
+          <div class="color color-1"></div>
+          <div class="name">Low</div>
+        </div>
+        <div class="legend-holder">
+          <div class="color color-2"></div>
+          <div class="name">Normal</div>
+        </div>
+        <div class="legend-holder">
+          <div class="color color-3"></div>
+          <div class="name">High</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="data-analytic-card wla-box-shadow chart-card">
+      <div class="d-flex flex-column justify-content-between h-100">
+        <div class="card-title-container">
+          <h4 class="title mt-2">Sleep</h4>
+        </div>
+
+        <div class="section-value">
+          <h3 class="value">6<small>h</small> 20<small>m</small></h3>
+        </div>
+      </div>
+
+      <div class="chart-section">
+        <app-analytic-chart
+          [series]="sleepChart.series"
+          [chart]="sleepChart.chart"
+          [plotOptions]="sleepChart.plotOptions"
+          [xaxis]="sleepChart.xaxis"
+          [yaxis]="sleepChart.yaxis"
+          [grid]="sleepChart.grid"
+          [colors]="sleepChart.colors"
+        ></app-analytic-chart>
+      </div>
+    </div>
+  </section>
+</div>

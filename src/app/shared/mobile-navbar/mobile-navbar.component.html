@@ -1,5 +1,5 @@
 <nav class="mobile-bar container">
-  <div matRRipple class="add shadow-sm" (click)="openMenu()">
+  <div matRRipple class="add shadow-sm" (click)="openMenu('3000ms', '1500ms')">
     <mat-icon class="material-icons-outlined">add</mat-icon>
   </div>
 
@@ -7,9 +7,13 @@
     <div
       [ngClass]="item.route === currentRoute ? 'active-nav' : ''"
       [routerLink]="item.route"
-      *ngFor="let item of navItems"
+      *ngFor="let item of navItems; let i = index"
     >
-      <mat-icon class="material-icons-outlined">{{ item.iconName }}</mat-icon>
+      <mat-icon
+        [ngClass]="[i === 1 ? 'me-4' : '', i === 2 ? 'ms-4' : '']"
+        class="material-icons-outlined"
+        >{{ item.iconName }}</mat-icon
+      >
     </div>
   </div>
 </nav>

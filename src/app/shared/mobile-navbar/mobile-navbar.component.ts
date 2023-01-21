@@ -46,9 +46,16 @@ export class MobileNavbarComponent implements OnInit, OnDestroy {
     this.currentRoute = this.router.url;
   }
 
-  openMenu() {
+  openMenu(enterAnimationDuration: any, exitAnimationDuration: any) {
     this.dialog.open(MenuPopupComponent, {
-      panelClass: 'menu-popup'
+     
+      panelClass: 'menu-popup',
+      // enterAnimationDuration: enterAnimationDuration,
+      // exitAnimationDuration: exitAnimationDuration,
+      position: {
+        bottom: '140px',
+        // left: '0px'
+      },
     });
   }
 

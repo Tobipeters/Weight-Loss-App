@@ -17,6 +17,14 @@
     .mat-icon {
       color: var(--wla-primary-color);
     }
+
+    svg {
+      width: 24px;
+      height: 24px;
+      path {
+        fill: var(--wla-primary-color);
+      }
+    }
   }
 
   .text-progress-holder {

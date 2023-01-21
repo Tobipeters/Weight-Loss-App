@@ -17,24 +17,67 @@ body {
   background-color: #fafafa;
 }
 
+.material-icons-outlined {
+  font-family: "Material Icons Outlined";
+  font-variation-settings: "FILL" 0, "wght" 100, "GRAD" 0, "opsz" 48;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+
+  .title {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+
+  .side-text {
+    color: #a4abb2;
+  }
+}
+
 .wla-box-shadow {
   box-shadow: 0px 7.7551px 23.2653px rgba(147, 147, 147, 0.15);
 }
 
+@keyframes growOeepn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.cdk-overlay-pane {
+  //   transform: translateY(-400%);
+  animation: growOeepn 1s forwards 0s ease-in;
+}
+// .cdk-overlay-container > * {
+//   transition: none;
+// }
+
 .menu-popup {
   width: 100%;
+  max-width: 92vw !important;
   position: relative;
 
   .mat-dialog-container {
     border-radius: 24px;
   }
 
-//   ::before {
-//     content: " ";
-//     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-//     background-color: black;
-//     width: 50px;
-//     height: 30px;
-//     transform: rotate(180deg);
-//   }
+  //   ::before {
+  //     content: " ";
+  //     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  //     background-color: black;
+  //     width: 50px;
+  //     height: 30px;
+  //     transform: rotate(180deg);
+  //   }
+}
+
+apx-chart > div {
+  min-height: unset !important;
 }

@@ -15,10 +15,6 @@
       color: var(--wla-primary-color);
     }
 
-    .material-icons-outlined {
-      font-family: "Material Icons Outlined";
-    }
-
     &:hover {
       background-color: var(--wla-primary-color);
       color: var(--wla-white);
@@ -32,8 +28,12 @@
 
 .menu-group-pointer {
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  background-color: black;
+  background-color: var(--wla-white);
   width: 50px;
   height: 30px;
   transform: rotate(180deg);
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  margin: 0 0 10px -25px;
 }

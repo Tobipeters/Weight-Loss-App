@@ -1,4 +1,4 @@
-<div id="chart" *ngIf="chartOptions">
+<ng-container *ngIf="chartOptions">
   <apx-chart
     *ngIf="showChart && chartOptions"
     [series]="chartOptions?.series"
@@ -9,7 +9,8 @@
     [xaxis]="chartOptions?.xaxis"
     [stroke]="chartOptions?.stroke"
     [grid]="chartOptions?.grid"
-    [fill]="chartOptions?.fill"
+    [colors]="chartOptions?.colors"
     [annotations]="chartOptions?.annotations"
+    [legend]="chartOptions?.legend"
   ></apx-chart>
-</div>
+</ng-container>
