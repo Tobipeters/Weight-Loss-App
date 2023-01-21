@@ -12,13 +12,13 @@ export class HomeComponent implements OnInit {
     {
       title: 'Calories burn',
       countFigure: '866',
-      iconTitle: 'watch',
+      iconTitle: 'burn',
       progressValue: '55',
     },
     {
       title: 'Steps',
       countFigure: '7579',
-      iconTitle: 'watch',
+      iconTitle: 'footprint',
       progressValue: '75',
     },
     {
@@ -38,17 +38,20 @@ export class HomeComponent implements OnInit {
       },
     ],
     chart: {
-      height: 250,
+      height: 220,
       type: 'bar',
       foreColor: '#ffffff',
       fontFamily: 'Roboto',
+      toolbar: {
+        show: false,
+      },
     },
     plotOptions: {
       bar: {
+        distributed: true,
         borderRadius: 12,
         borderRadiusApplication: 'end',
-        columnWidth: '50%',
-    
+        columnWidth: '50px',
       },
     },
     grid: {
@@ -61,6 +64,15 @@ export class HomeComponent implements OnInit {
       categories: ['t', 'w', 't', 'f', 's', 's', 'm'],
       tickPlacement: 'on',
     },
+    colors: [
+      '#c3ff4d',
+      '#c3ff4d',
+      '#d7d1ff',
+      '#d7d1ff',
+      '#c3ff4d',
+      '#d7d1ff',
+      '#d7d1ff',
+    ],
   };
 
   constructor() {}

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-menu-popup',
@@ -25,7 +26,13 @@ export class MenuPopupComponent implements OnInit {
     },
   ];
 
-  constructor() {}
+  constructor(private dialogRef: MatDialogRef<any>) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    
+  }
+
+  changePosition() {
+    this.dialogRef.updatePosition({ top: '50px', left: '50px' });
+  }
 }

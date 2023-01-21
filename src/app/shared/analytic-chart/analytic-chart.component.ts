@@ -36,7 +36,10 @@ export class AnalyticChartComponent implements OnInit, OnDestroy {
   @Input() chart: ApexChart | any;
   @Input() plotOptions!: ApexPlotOptions;
   @Input() grid!: ApexGrid;
-  @Input() xaxis!: any
+  @Input() xaxis!: any;
+  @Input() yaxis!: any;
+  @Input() colors!: any[];
+  @Input() stroke!: ApexStroke;
 
   chartOptions!: Partial<IChartOptions> | any;
   showChart: boolean = false;
@@ -46,56 +49,19 @@ export class AnalyticChartComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.chartOptions = {
       series: this.series,
-      annotations: {
-        // points: [
-        //   {
-        //     // x: 'Bananas',
-        //     seriesIndex: 0,
-        //     label: {
-        //       borderColor: '#775DD0',
-        //       offsetY: 0,
-        //       style: {
-        //         color: '#fff',
-        //         background: '#775DD0',
-        //       },
-        //       // text: 'Bananas are good',
-        //     },
-        //   },
-        // ],
-      },
       chart: this.chart,
       plotOptions: this.plotOptions,
       dataLabels: {
         enabled: false,
       },
-      // stroke: {
-      //   width: 2,
-      // },
       grid: this.grid,
-
       xaxis: this.xaxis,
-
-      yaxis: {
-        title: {
-          // text: 'Servings',
-        },
+      yaxis: this.yaxis,
+      colors: this.colors,
+      legend: {
+        show: false,
       },
-
-      fill: {
-        colors: ['#c3ff4d', '#d7d1ff']
-        // type: 'gradient',
-        // gradient: {
-        //   shade: 'light',
-        //   type: 'horizontal',
-        //   shadeIntensity: 0.25,
-        //   gradientToColors: undefined,
-        //   inverseColors: true,
-        //   opacityFrom: 0.85,
-        //   opacityTo: 0.85,
-        //   stops: [50, 0, 100],
-        // },
-      },
-
+      stroke: this.stroke
     };
 
     this.showChart = true;
