@@ -1,6 +1,10 @@
 <ng-container>
   <ul class="list-group menu-list">
-    <li class="list-group-item wla-box-shadow" *ngFor="let menu of menuItems">
+    <li
+      class="list-group-item wla-box-shadow"
+      *ngFor="let menu of menuItems"
+      (click)="openDialog()"
+    >
       <mat-icon class="material-icons-outlined">{{ menu.iconName }}</mat-icon>
       <ng-container>{{ menu.title }} </ng-container>
     </li>
