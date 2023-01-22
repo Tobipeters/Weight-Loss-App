@@ -32,6 +32,7 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 
 //   used
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatSliderModule } from '@angular/material/slider';
 
 export const DATE_FORMATS = {
   parse: {
@@ -66,8 +67,9 @@ const material = [
   MatSnackBarModule,
   MatChipsModule,
   MatAutocompleteModule,
-
+  
   MatProgressBarModule,
+  MatSliderModule,
 ];
 
 @NgModule({

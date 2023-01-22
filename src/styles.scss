@@ -101,3 +101,45 @@ apx-chart > div {
   font-weight: 500;
   justify-content: center;
 }
+
+.calibrated-slider-container {
+  --ruler-s-c: var(--wla-secondary-color);
+  --ruler-b-c: var(--wla-primary-color);
+  --ruler-s-h: 20px;
+  --ruler-m-h: 40px;
+  --ruler-b-h: 80px;
+  position: relative;
+
+  .ruler-x {
+    display: flex;
+    overflow-x: auto;
+    gap: 0.75rem;
+    width: 100%;
+    transform: rotate(180deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 0;
+    // height: 200px;
+    scrollbar-color: transparent !important;
+
+    li {
+      background-color: var(--ruler-s-c);
+      width: 3px;
+      height: var(--ruler-s-h);
+      list-style: none;
+
+      &:nth-child(5n) {
+        width: 4px;
+        height: var(--ruler-m-h);
+        background-color: var(--ruler-b-c);
+      }
+
+      &:nth-child(10n) {
+        width: 5px;
+        height: var(--ruler-b-h);
+        background-color: var(--ruler-b-c);
+      }
+    }
+  }
+}

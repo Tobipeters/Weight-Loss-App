@@ -1,4 +1,15 @@
 <header class="header">
-  <h3 class="page-title mb-0">{{ title }}</h3>
+  <div class="d-flex align-items-center gap-2">
+    <div
+      matRipple
+      (click)="handleBack()"
+      class="arrow-back-holder"
+      *ngIf="isArrowBack"
+    >
+      <mat-icon class="material-symbols-outlined"> arrow_back_ios </mat-icon>
+    </div>
+
+    <h3 class="page-title mb-0">{{ title }}</h3>
+  </div>
   <ng-content></ng-content>
 </header>
