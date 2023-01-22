@@ -1,3 +1,3 @@
-# Weight Loss App (Design Assessment by TeamApt =)
+# Weight Loss App (Design Assessment by TeamApt)
 
-Live URRL - [](https://weight-loss-app-five.vercel.app/)
+Live URRL - [https://weight-loss-app-five.vercel.app/](https://weight-loss-app-five.vercel.app/)
