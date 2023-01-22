@@ -45,6 +45,7 @@
 
 .goal-section {
   padding: 1rem 1.5rem 2rem;
+  position: relative;
 }
 
 .chart-section {
@@ -58,6 +59,14 @@
   border-radius: 12px;
   display: flex;
   align-items: center;
+  transition: 0.5s all ease-in;
+
+  //   Animation
+  animation: bottomSwipeView ease 1s;
+  -webkit-animation: bottomSwipeView ease 1s;
+  -moz-animation: bottomSwipeView ease 1s;
+  -o-animation: bottomSwipeView ease 1s;
+  -ms-animation: bottomSwipeView ease 1s;
 
   .tend-title {
     display: flex;
@@ -69,8 +78,8 @@
     }
 
     .title {
-      font-size: 0.9rem;
-      font-weight: 400;
+      font-size: 0.95rem;
+      font-weight: 500;
     }
   }
 

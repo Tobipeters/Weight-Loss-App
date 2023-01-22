@@ -7,6 +7,13 @@
   border: none;
   min-width: 200px;
 
+    //   Animation
+    animation: zoomMoveToLeftView ease 1s;
+    -webkit-animation: zoomMoveToLeftView ease 1s;
+    -moz-animation: zoomMoveToLeftView ease 1s;
+    -o-animation: zoomMoveToLeftView ease 1s;
+    -ms-animation: zoomMoveToLeftView ease 1s;
+
   .icon-holder {
     order: 1;
     width: 80px;

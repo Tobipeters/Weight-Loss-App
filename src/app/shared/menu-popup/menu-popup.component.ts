@@ -11,7 +11,7 @@ export class MenuPopupComponent implements OnInit {
   menuItems: any[] = [
     {
       iconName: 'favorite',
-      title: 'Add blood pressuree',
+      title: 'Add blood pressure',
     },
     {
       iconName: 'note_alt',

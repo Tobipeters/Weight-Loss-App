@@ -25,6 +25,7 @@
     .value {
       font-size: 3.5rem;
       font-weight: 700;
+      white-space: nowrap;
     }
   }
 }
@@ -55,12 +56,14 @@
     .gender {
       text-align: center;
       margin: 1rem 0;
+      white-space: nowrap;
     }
 
     .digit {
       text-align: center;
       margin: 1.5rem 0 0;
       font-size: 2rem;
+      white-space: nowrap;
     }
   }
 
