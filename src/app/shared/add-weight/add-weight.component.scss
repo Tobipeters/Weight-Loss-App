@@ -76,15 +76,10 @@
 ::ng-deep {
   .weight-slider {
     margin: 2rem 0 1rem;
-    // width: 100% !important;
-    // height: 20px !important;
     .mat-slider {
       height: 100px;
       width: 100%;
       opacity: 0;
-    }
-
-    .mat-slider-horizontal .mat-slider-thumb-container {
     }
 
     .mat-slider.mat-accent .mat-slider-track-fill,
