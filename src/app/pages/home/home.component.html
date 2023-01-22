@@ -9,7 +9,7 @@
 
   <section class="overview-section">
     <div class="metric-container">
-      <div class="col-6 p-0" *ngFor="let metric of metrics">
+      <div class="col-lg-6 col-md-4 col-6 p-0" *ngFor="let metric of metrics">
         <app-metric-card [metricDetails]="metric"></app-metric-card>
       </div>
     </div>
@@ -37,7 +37,7 @@
   <section class="goal-section">
     <div class="title-container">
       <h4 class="title mb-0">Trending Workouts</h4>
-      <a href="3" class="side-text mb-0">sell all</a>
+      <a class="side-text mb-0">sell all</a>
     </div>
 
     <div class="trending-card wla-box-shadow">

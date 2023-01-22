@@ -9,6 +9,7 @@
 html,
 body {
   height: 100%;
+  position: relative;
 }
 
 body {
@@ -43,29 +44,17 @@ body {
   box-shadow: 0px 7.7551px 23.2653px rgba(147, 147, 147, 0.15);
 }
 
-@keyframes growOeepn {
-  from {
-    transform: scale(0.4);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
-// .cdk-overlay-pane {
-//     transform: translateY(-400%);
-// }
-
-// .cdk-overlay-container > * {
-//   transition: none;
-// }
-
 .menu-popup {
   //   animation: growOeepn 0.8s ease-in;
   width: 100%;
   max-width: 85vw !important;
   position: relative;
-  transition: 0.8s all ease-in;
+  transition: 0.3s all ease-in;
+  animation: growOeepn ease 1s;
+  -webkit-animation: growOeepn ease 1s;
+  -moz-animation: growOeepn ease 1s;
+  -o-animation: growOeepn ease 1s;
+  -ms-animation: growOeepn ease 1s;
 
   .mat-dialog-container {
     border-radius: 24px;
@@ -73,14 +62,31 @@ body {
 }
 
 .fullpage-popup {
-  transition: 0.8s all ease-in;
+  transition: 0.3s all ease-in;
   width: 100%;
   height: 100%;
   max-width: 100vw !important;
   max-height: 100vh !important;
 
+  //   Animation
+  animation: dialogBottomSwipeView ease 1s;
+  -webkit-animation: dialogBottomSwipeView ease 1s;
+  -moz-animation: dialogBottomSwipeView ease 1s;
+  -o-animation: dialogBottomSwipeView ease 1s;
+  -ms-animation: dialogBottomSwipeView ease 1s;
+
   .mat-dialog-container {
     padding: 0 !important;
+  }
+}
+
+@media screen and (min-width: 820.9px) {
+  .menu-popup {
+    max-width: 500px !important;
+  }
+
+  .fullpage-popup {
+    max-width: 576px !important;
   }
 }
 
@@ -142,4 +148,84 @@ apx-chart > div {
       }
     }
   }
+}
+
+// Animation
+@keyframes growOeepn {
+  from {
+    transform: scale(0.4);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes dialogBottomSwipeView {
+  0% {
+    top: 100vh;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes bottomSwipeView {
+  0% {
+    margin-top: 23%;
+  }
+  100% {
+    margin-top: 0%;
+  }
+}
+
+@keyframes zoomMoveToLeftView {
+  0% {
+    left: 10%;
+    transform: scale(0.85);
+  }
+  100% {
+    left: 0;
+    transform: scale(1);
+  }
+}
+
+@keyframes rightToLeftBoxFirst {
+  0% {
+    left: 20%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes rightToLeftBoxTwo {
+  0% {
+    left: 40%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes rightToLeftBoxThree {
+  0% {
+    left: 60%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(90, 90, 90);
+  display: none !important;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+  display: none !important;
 }

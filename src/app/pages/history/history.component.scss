@@ -32,6 +32,7 @@
   padding: 1rem 0.75rem;
   margin-bottom: 1.5rem;
   background-color: var(--wla-white);
+  position: relative;
 
   .card-title-container {
     display: flex;
@@ -126,4 +127,31 @@
       background-color: var(--wla-primary-color-100);
     }
   }
+}
+
+.box-ani-1 {
+  //   Animation
+  animation: rightToLeftBoxFirst ease 1s;
+  -webkit-animation: rightToLeftBoxFirst ease 1s;
+  -moz-animation: rightToLeftBoxFirst ease 1s;
+  -o-animation: rightToLeftBoxFirst ease 1s;
+  -ms-animation: rightToLeftBoxFirst ease 1s;
+}
+
+.box-ani-2 {
+  //   Animation
+  animation: rightToLeftBoxTwo ease 1s;
+  -webkit-animation: rightToLeftBoxTwo ease 1s;
+  -moz-animation: rightToLeftBoxTwo ease 1s;
+  -o-animation: rightToLeftBoxTwo ease 1s;
+  -ms-animation: rightToLeftBoxTwo ease 1s;
+}
+
+.box-ani-3 {
+  //   Animation
+  animation: rightToLeftBoxThree ease 1s;
+  -webkit-animation: rightToLeftBoxThree ease 1s;
+  -moz-animation: rightToLeftBoxThree ease 1s;
+  -o-animation: rightToLeftBoxThree ease 1s;
+  -ms-animation: rightToLeftBoxThree ease 1s;
 }

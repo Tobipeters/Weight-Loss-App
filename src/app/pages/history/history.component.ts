@@ -18,6 +18,7 @@ export class HistoryComponent implements OnInit {
       },
     ],
     chart: {
+      width: '100%',
       height: 130,
       type: 'line',
       foreColor: '#a4abb2;',
@@ -73,6 +74,7 @@ export class HistoryComponent implements OnInit {
       },
     ],
     chart: {
+      width: '100%',
       height: 130,
       type: 'bar',
       foreColor: '#a4abb2;',

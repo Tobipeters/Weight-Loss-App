@@ -38,6 +38,7 @@ export class HomeComponent implements OnInit {
       },
     ],
     chart: {
+      width: "100%",
       height: 220,
       type: 'bar',
       foreColor: '#ffffff',
