@@ -4,6 +4,15 @@
   align-items: center;
   justify-content: space-between;
 
+  .arrow-back-holder {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+
   .page-title {
     font-size: 1.5rem;
     font-weight: 700;

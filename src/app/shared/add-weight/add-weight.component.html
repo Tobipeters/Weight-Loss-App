@@ -1,5 +1,5 @@
 <div class="add-weight-container">
-  <app-header [title]="title">
+  <app-header [title]="title" (goback)="handleGoBack()" [isArrowBack]="true">
     <svg
       width="24"
       height="24"
@@ -58,6 +58,75 @@
     </svg>
   </app-header>
 
+  <section class="slider-value-section">
+    <div class="value-container">
+      <h3 class="mb-0 value">{{ replaceDotWithComma(gridsize.value) }}</h3>
+      <div class="curve-b-l"></div>
+      <div class="curve-b-r"></div>
+    </div>
+
+    <div class="calibrated-slider-container mt-4">
+      <ul class="ruler-x">
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;&nbsp;</li>
+      </ul>
+    </div>
+
+    <div class="weight-slider">
+      <mat-slider
+        #gridsize
+        (change)="updateSetting($event)"
+        step="10.5"
+        min="0"
+        max="100"
+        value="52.5"
+      ></mat-slider>
+    </div>
+  </section>
+
   <section class="box-section">
     <div class="box-container">
       <div class="box-data wla-box-shadow">
@@ -86,6 +155,8 @@
       </div>
     </div>
 
-    <button matRipple class="btn wla-primary-btn">Save</button>
+    <button matRipple (click)="handleGoBack()" class="btn wla-primary-btn">
+      Save
+    </button>
   </section>
 </div>
